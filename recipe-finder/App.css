@@ -1,0 +1,41 @@
+.app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-form {
+    margin: 20px;
+  }
+  
+  .search-form input {
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .search-form button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
