@@ -15,23 +15,24 @@ const App = () => {
         password
       });
       if (response.data.success) {
-        setMessage('Login successful!');
+        setMessage('🚀 Login successful! Welcome back!');
       } else {
-        setMessage('Invalid username or password.');
+        setMessage('⚠️ Invalid username or password.');
       }
     } catch (error) {
-      setMessage('Error occurred during login.');
+      setMessage('❌ An error occurred during login.');
     }
   };
 
   return (
     <div className="login-form">
-      <h2>Login</h2>
+      <h2>Sign In</h2>
       <form onSubmit={handleLogin}>
         <div>
           <label>Username:</label>
           <input
             type="text"
+            placeholder="Enter your username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
@@ -41,6 +42,7 @@ const App = () => {
           <label>Password:</label>
           <input
             type="password"
+            placeholder="Enter your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
